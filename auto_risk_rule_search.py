@@ -232,7 +232,6 @@ class Auto_Risk_Rule_Search:
         if self.print_log:
             print(log_message)
 
-        # 以下代码保持不变...
         # 初始化搜索轮次
         search_round = 1
         previous_best_thresholds = None
@@ -709,7 +708,6 @@ class Auto_Risk_Rule_Search:
                         self.node_map[node_id] = node
                         return node
 
-        # 动态分割逻辑（保持原有逻辑）
         # 确定当前层的候选特征
         if depth < len(self.priority_features) and self.priority_features[depth] is not None:
             candidates = [self.priority_features[depth]]  # 使用指定的特征
